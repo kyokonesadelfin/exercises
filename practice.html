@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Practice Exercise</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <style>
+        .scrollspy {
+            display: flex;
+            
+        }
+        .pagination {
+            justify-content: center;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="container">
+        
+        <div id="accordion">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Collapsible Group Item #1
+                  </button>
+                </h5>
+              </div>
+          
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Collapsible Group Item #2
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Collapsible Group Item #3
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="scrollspy">
+        
+                <nav id="navbar-example3" class="navbar navbar-light bg-light">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <nav class="nav nav-pills flex-column">
+                      <a class="nav-link" href="#item-1">Item 1</a>
+                      <nav class="nav nav-pills flex-column">
+                        <a class="nav-link ml-3 my-1" href="#item-1-1">Item 1-1</a>
+                        <a class="nav-link ml-3 my-1" href="#item-1-2">Item 1-2</a>
+                      </nav>
+                      <a class="nav-link" href="#item-2">Item2</a>
+                      <a class="nav-link" href="#item-3">Item3</a>
+                      <nav class="nav nav-pills flex-column">
+                        <a class="nav-link ml-3 my-1" href="#item-3-1">Item 3-1</a>
+                        <a class="nav-link ml-3 my-1" href="#item-3-2">Item 3-2</a>
+                      </nav>
+                    </nav>
+                  </nav>
+            </div>
+                <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+                    <h4 id="item-1">Item 1</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolore explicabo, ad debitis cupiditate architecto alias sunt nostrum ab corrupti blanditiis. Atque, error aspernatur? Nobis dolorem in ut eligendi iusto voluptate fugiat fuga rem, saepe ratione eius illum sint officiis animi asperiores officia praesentium. Corporis officiis excepturi hic totam reprehenderit.</p>
+                    <h5 id="item-1-1">Item 1-1</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolore explicabo, ad debitis cupiditate architecto alias sunt nostrum ab corrupti blanditiis. Atque, error aspernatur? Nobis dolorem in ut eligendi iusto voluptate fugiat fuga rem, saepe ratione eius illum sint officiis animi asperiores officia praesentium. Corporis officiis excepturi hic totam reprehenderit.</p>
+                    <h5 id="item-1-2">Item 2-2</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolore explicabo, ad debitis cupiditate architecto alias sunt nostrum ab corrupti blanditiis. Atque, error aspernatur? Nobis dolorem in ut eligendi iusto voluptate fugiat fuga rem, saepe ratione eius illum sint officiis animi asperiores officia praesentium. Corporis officiis excepturi hic totam reprehenderit.</p>
+                    <h4 id="item-2">Item 2</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolore explicabo, ad debitis cupiditate architecto alias sunt nostrum ab corrupti blanditiis. Atque, error aspernatur? Nobis dolorem in ut eligendi iusto voluptate fugiat fuga rem, saepe ratione eius illum sint officiis animi asperiores officia praesentium. Corporis officiis excepturi hic totam reprehenderit.</p>
+                    <h4 id="item-3">Item 3</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolore explicabo, ad debitis cupiditate architecto alias sunt nostrum ab corrupti blanditiis. Atque, error aspernatur? Nobis dolorem in ut eligendi iusto voluptate fugiat fuga rem, saepe ratione eius illum sint officiis animi asperiores officia praesentium. Corporis officiis excepturi hic totam reprehenderit.</p>
+                    <h5 id="item-3-1">Item 3-1</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolore explicabo, ad debitis cupiditate architecto alias sunt nostrum ab corrupti blanditiis. Atque, error aspernatur? Nobis dolorem in ut eligendi iusto voluptate fugiat fuga rem, saepe ratione eius illum sint officiis animi asperiores officia praesentium. Corporis officiis excepturi hic totam reprehenderit.</p>
+                    <h5 id="item-3-2">Item 3-2</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolore explicabo, ad debitis cupiditate architecto alias sunt nostrum ab corrupti blanditiis. Atque, error aspernatur? Nobis dolorem in ut eligendi iusto voluptate fugiat fuga rem, saepe ratione eius illum sint officiis animi asperiores officia praesentium. Corporis officiis excepturi hic totam reprehenderit.</p>
+                  </div>
+            </div>
+              
+        </div>
+    </div>
+    
+    <div class="pagination">
+        <nav aria-label="...">
+            <ul class="pagination">
+              <li class="page-item disabled">
+                <span class="page-link">Previous</span>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item active">
+                <span class="page-link">
+                  2
+                  <span class="sr-only">(current)</span>
+                </span>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+              </li>
+            </ul>
+          </nav>
+    </div>
+
+    
+</body>
+
+</html>

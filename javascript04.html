@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+
+<body>
+
+    <script>
+
+        function radioSelect() { 
+            var ele =document.getElementsByName('gender');
+    
+                for(i = 0;  i < ele.length; i++) {
+                    if(ele[i].checked)
+                    document.getElementById("result").innerHTML = "Gender: " + ele[i].value;
+                }
+        }
+    </script>
+<form>
+
+    <h1>Radio Buttons</h1>
+
+    <input type="radio" id="male" name="gender" value="Male">
+    <label for="male">Male</label> <br>
+    <input type="radio" id="female" name="gender" value="Female">
+    <label for="female">Female</label> <br>
+    <input type="radio" id="other" name="gender" value="Other">
+    <label for="female">Other</label> <br> <br>
+    <input type="button" value="Get Radio Value" onclick="radioSelect()">
+
+</form>
+
+
+
+
+<p id="result"></p>
+
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" value="Ann">
+        <label for="lastName">First Name:</label>
+        <input type="text" id="lastName" name="lastName" value="Cruz"> <br> <br>
+
+
+        <button onclick="printName()">Click Me</button>
+
+
+        <p id="result"></p>
+        
+
+
+        <script>
+            function printName() {
+                var fn = document.getElementById("firstName").value;
+                var ln = document.getElementById("lastName").value;
+                document.getElementById("result").innerHTML = ln + " " + fn;
+            }
+        </script>
+
+
+    </body>
+</html>

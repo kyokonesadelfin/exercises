@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form name="selectForm">
+            <label for="musicTypes">Choose some music types, then click the button below:</label> &nbsp;
+            <select name="musicTypes" multiple="multiple" id="musicTypes" >
+                <option value="1">R&B</option>
+                <option value="2">Jazz</option>
+                <option value="3">Blues</option>
+                <option value="4">New Age</option>
+                <option value="5">Soul</option>
+              </select> <br> <br>
+              <p><input type="button" id="btn" value="How many are selected?"></p>
+        </form>
+        <script>
+
+            function howMany (selectObject) {
+             let numberSelected = 0;
+             for(let i=0; i<selectObject.options.length; i++) {
+                 if (selectObject.options[i].selected) {
+                     numberSelected++;
+                 }
+             }
+             return numberSelected;
+            }
+
+            let btn = document.getElementById('btn');
+            btn.addEventListener('click', function() {
+             alert('Number of options selected: ' + howMany(document.selectForm.musicTypes))
+            });
+
+     </script>
+
+
+    </body>
+</html>
+
+
+
